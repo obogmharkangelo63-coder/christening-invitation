@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e8e0d5;
+    color: #62594f;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(245,239,229,.75),
+        rgba(245,239,229,.75)
+    );
+}
+
+.invitation-card {
+    background: #fffdf9;
+    max-width: 650px;
+    width: 100%;
+    padding: 45px 35px;
+    text-align: center;
+    border: 2px solid #d8c6a7;
+    outline: 5px solid #fffdf9;
+    box-shadow: 0 10px 35px rgba(0,0,0,.12);
+}
+
+.small-title {
+    letter-spacing: 4px;
+    font-size: 11px;
+    color: #a58b65;
+}
+
+.cross {
+    font-size: 42px;
+    color: #b69b72;
+    margin: 20px 0;
+}
+
+.welcome {
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 58px;
+    color: #b39870;
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+
+.photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #e6d7c1;
+    margin: 20px auto;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.child-label {
+    font-size: 13px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #a58b65;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.divider {
+    width: 65%;
+    height: 1px;
+    background: #d8c6a7;
+    margin: 25px auto;
+}
+
+.message {
+    line-height: 1.9;
+    font-size: 14px;
+    max-width: 420px;
+    margin: auto;
+}
+
+.event-details {
+    margin: 30px 0;
+    display: grid;
+    gap: 22px;
+}
+
+.event-details span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #b39870;
+}
+
+.event-details h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 5px;
+}
+
+.event-details p {
+    font-size: 12px;
+}
+
+.countdown-title {
+    font-family: 'Playfair Display', serif;
+    margin: 25px 0 15px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    background: #f1e9dd;
+    padding: 12px;
+    min-width: 75px;
+    border-radius: 8px;
+}
+
+.countdown strong {
+    display: block;
+    font-size: 23px;
+    color: #a58b65;
+}
+
+.countdown span {
+    font-size: 11px;
+}
+
+.map-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #b39870;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+.map-button:hover {
+    background: #92754d;
+}
+
+.rsvp-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select {
+    padding: 13px;
+    border: 1px solid #d8c6a7;
+    border-radius: 5px;
+    font-family: inherit;
+    background: white;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    background: #b39870;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #92754d;
+}
+
+#responseMessage {
+    color: #6c8b64;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 35px;
+    line-height: 2;
+    font-size: 13px;
+}
+
+footer h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    color: #a58b65;
+}
+
+@media (max-width: 480px) {
+    .invitation-card {
+        padding: 35px 18px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .photo {
+        width: 155px;
+        height: 155px;
+    }
+
+    .countdown {
+        gap: 7px;
+    }
+
+    .countdown div {
+        min-width: 65px;
+    }
+}
